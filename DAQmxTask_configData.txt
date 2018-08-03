@@ -1,0 +1,49 @@
+﻿[DAQmx]	MajorVersion	MinorVersion	
+	9	5	
+
+[DAQmxChannel]	AI.Max	AI.MeasType	AI.Min	AI.TermCfg	AI.Voltage.Units	ChanType	PhysicalChanName	
+UShape1/Voltage_0	10	Voltage	-10	Differential	Volts	Analog Input	ATI-1/ai0	
+UShape1/Voltage_1	10	Voltage	-10	Differential	Volts	Analog Input	ATI-1/ai1	
+UShape1/Voltage_2	10	Voltage	-10	Differential	Volts	Analog Input	ATI-1/ai2	
+UShape1/Voltage_3	10	Voltage	-10	Differential	Volts	Analog Input	ATI-1/ai3	
+UShape1/Voltage_4	10	Voltage	-10	Differential	Volts	Analog Input	ATI-1/ai4	
+UShape1/Voltage_5	10	Voltage	-10	Differential	Volts	Analog Input	ATI-1/ai5	
+UShape2/Voltage_0	10	Voltage	-10	Differential	Volts	Analog Input	ATI-2/ai0	
+UShape2/Voltage_1	10	Voltage	-10	Differential	Volts	Analog Input	ATI-2/ai1	
+UShape2/Voltage_2	10	Voltage	-10	Differential	Volts	Analog Input	ATI-2/ai2	
+UShape2/Voltage_3	10	Voltage	-10	Differential	Volts	Analog Input	ATI-2/ai3	
+UShape2/Voltage_4	10	Voltage	-10	Differential	Volts	Analog Input	ATI-2/ai4	
+UShape2/Voltage_5	10	Voltage	-10	Differential	Volts	Analog Input	ATI-2/ai5	
+UShape3/Voltage_0	10	Voltage	-10	Differential	Volts	Analog Input	ATI-3/ai0	
+UShape3/Voltage_1	10	Voltage	-10	Differential	Volts	Analog Input	ATI-3/ai1	
+UShape3/Voltage_2	10	Voltage	-10	Differential	Volts	Analog Input	ATI-3/ai2	
+UShape3/Voltage_3	10	Voltage	-10	Differential	Volts	Analog Input	ATI-3/ai3	
+UShape3/Voltage_4	10	Voltage	-10	Differential	Volts	Analog Input	ATI-3/ai4	
+UShape3/Voltage_5	10	Voltage	-10	Differential	Volts	Analog Input	ATI-3/ai5	
+UShape4/Voltage_0	10	Voltage	-10	Differential	Volts	Analog Input	ATI-4/ai0	
+UShape4/Voltage_1	10	Voltage	-10	Differential	Volts	Analog Input	ATI-4/ai1	
+UShape4/Voltage_2	10	Voltage	-10	Differential	Volts	Analog Input	ATI-4/ai2	
+UShape4/Voltage_3	10	Voltage	-10	Differential	Volts	Analog Input	ATI-4/ai3	
+UShape4/Voltage_4	10	Voltage	-10	Differential	Volts	Analog Input	ATI-4/ai4	
+UShape4/Voltage_5	10	Voltage	-10	Differential	Volts	Analog Input	ATI-4/ai5	
+
+[DAQmxChannel]	ChanType	DO.InvertLines	PhysicalChanName	
+TriggerDPort/DigitalOut	Digital Output	0	Dev6/port0	
+
+[DAQmxTask]	Channels	SampClk.ActiveEdge	SampClk.Rate	SampClk.Src	SampQuant.SampMode	SampQuant.SampPerChan	SampTimingType	
+TriggerDPort	TriggerDPort/DigitalOut						On Demand	
+UShape1	UShape1/Voltage_0, UShape1/Voltage_1, UShape1/Voltage_2, UShape1/Voltage_3, UShape1/Voltage_4, UShape1/Voltage_5	Rising	1000		Continuous Samples	1000	Sample Clock	
+UShape2	UShape2/Voltage_0, UShape2/Voltage_1, UShape2/Voltage_2, UShape2/Voltage_3, UShape2/Voltage_4, UShape2/Voltage_5	Rising	1000		Continuous Samples	1000	Sample Clock	
+UShape3	UShape3/Voltage_0, UShape3/Voltage_1, UShape3/Voltage_2, UShape3/Voltage_3, UShape3/Voltage_4, UShape3/Voltage_5	Rising	1000		Continuous Samples	1000	Sample Clock	
+UShape4	UShape4/Voltage_0, UShape4/Voltage_1, UShape4/Voltage_2, UShape4/Voltage_3, UShape4/Voltage_4, UShape4/Voltage_5	Rising	1000		Continuous Samples	1000	Sample Clock	
+
+[DAQmxDevice]	BusType	DevSerialNum	PCI.BusNum	PCI.DevNum	ProductNum	ProductType	
+ATI-1	PCI	0x135BEAF	0x2	0xC	0x70B0	PCI-6220	
+ATI-2	PCI	0x14545AF	0x2	0xB	0x70B0	PCI-6220	
+ATI-3	PCI	0x135BEFD	0x2	0xA	0x70B0	PCI-6220	
+ATI-4	PCI	0x1336FCF	0x2	0x9	0x70B0	PCI-6220	
+Dev6	USB	0x1655C96			0x7330	USB-6225 (Mass Termination)	
+
+[DAQmxRTSICable]	RTSI.ConnDevs	RTSI.LineReservationMask	
+RTSICable0	ATI-2, ATI-1, ATI-3, ATI-4	0	
+
