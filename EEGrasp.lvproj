@@ -11,9 +11,11 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="ctlPkgATI.ctl" Type="VI" URL="../ctlPkgATI.ctl"/>
+		<Item Name="ctlPkgMain.ctl" Type="VI" URL="../ctlPkgMain.ctl"/>
 		<Item Name="ctlSeqFNs.ctl" Type="VI" URL="../ctlSeqFNs.ctl"/>
 		<Item Name="ctlSeqFNs_SubVI ATI.ctl" Type="VI" URL="../ctlSeqFNs_SubVI ATI.ctl"/>
 		<Item Name="ctlSeqFNs_SubVI PhaseSpace.ctl" Type="VI" URL="../ctlSeqFNs_SubVI PhaseSpace.ctl"/>
+		<Item Name="ctlTrialState.ctl" Type="VI" URL="../ctlTrialState.ctl"/>
 		<Item Name="Error Clear.vi" Type="VI" URL="../Error Clear.vi"/>
 		<Item Name="FP Position and Size.vi" Type="VI" URL="../FP Position and Size.vi"/>
 		<Item Name="GLOBAL -MAIN.vi" Type="VI" URL="../GLOBAL -MAIN.vi"/>
@@ -21,9 +23,9 @@
 		<Item Name="QSM Queue Mgr SubVI 1.vi" Type="VI" URL="../QSM Queue Mgr SubVI 1.vi"/>
 		<Item Name="QSM Queue Mgr SubVI 2.vi" Type="VI" URL="../QSM Queue Mgr SubVI 2.vi"/>
 		<Item Name="STTM Q MGR.vi" Type="VI" URL="../STTM Q MGR.vi"/>
-		<Item Name="SubVI 2.vi" Type="VI" URL="../SubVI 2.vi"/>
 		<Item Name="SubVI ATI.vi" Type="VI" URL="../SubVI ATI.vi"/>
 		<Item Name="SubVI PhaseSpace.vi" Type="VI" URL="../SubVI PhaseSpace.vi"/>
+		<Item Name="TDMS viewer.vi" Type="VI" URL="../TDMS viewer.vi"/>
 		<Item Name="TriggerDPort" Type="NI-DAQmx Task">
 			<Property Name="\0\ChanType" Type="Str">Digital Output</Property>
 			<Property Name="\0\DO.InvertLines" Type="Str">0</Property>
@@ -265,6 +267,7 @@
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
 				<Item Name="AsciiToInt.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/AsciiToInt.vi"/>
+				<Item Name="Beep.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/Beep.vi"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
@@ -285,6 +288,7 @@
 				<Item Name="Find Tag.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find Tag.vi"/>
 				<Item Name="Format Message String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Format Message String.vi"/>
 				<Item Name="formatPropertyList.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/formatPropertyList.vi"/>
+				<Item Name="FormatTime String.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/ElapsedTimeBlock.llb/FormatTime String.vi"/>
 				<Item Name="General Error Handler CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler CORE.vi"/>
 				<Item Name="General Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler.vi"/>
 				<Item Name="Get String Text Bounds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Get String Text Bounds.vi"/>
@@ -316,6 +320,7 @@
 				<Item Name="setListBoxColumnWidths.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/setListBoxColumnWidths.vi"/>
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
 				<Item Name="status.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/status.vi"/>
+				<Item Name="subElapsedTime.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/ElapsedTimeBlock.llb/subElapsedTime.vi"/>
 				<Item Name="subFile Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/express/express input/FileDialogBlock.llb/subFile Dialog.vi"/>
 				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
 				<Item Name="TDMS - File Viewer.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/TDMS - File Viewer.vi"/>
