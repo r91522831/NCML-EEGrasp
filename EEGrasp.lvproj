@@ -12,6 +12,9 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="ctlPkgATI.ctl" Type="VI" URL="../ctlPkgATI.ctl"/>
 		<Item Name="ctlPkgMain.ctl" Type="VI" URL="../ctlPkgMain.ctl"/>
+		<Item Name="ctlProtocol.ctl" Type="VI" URL="../ctlProtocol.ctl"/>
+		<Item Name="ctlProtocolSubID.ctl" Type="VI" URL="../ctlProtocolSubID.ctl"/>
+		<Item Name="ctlProtocolUnit.ctl" Type="VI" URL="../ctlProtocolUnit.ctl"/>
 		<Item Name="ctlSeqFNs.ctl" Type="VI" URL="../ctlSeqFNs.ctl"/>
 		<Item Name="ctlSeqFNs_SubVI ATI.ctl" Type="VI" URL="../ctlSeqFNs_SubVI ATI.ctl"/>
 		<Item Name="ctlSeqFNs_SubVI PhaseSpace.ctl" Type="VI" URL="../ctlSeqFNs_SubVI PhaseSpace.ctl"/>
