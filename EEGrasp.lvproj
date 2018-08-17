@@ -20,6 +20,7 @@
 		<Item Name="STTM Q MGR.vi" Type="VI" URL="../STTM Q MGR.vi"/>
 		<Item Name="FP Position and Size.vi" Type="VI" URL="../FP Position and Size.vi"/>
 		<Item Name="GLOBAL -MAIN.vi" Type="VI" URL="../GLOBAL -MAIN.vi"/>
+		<Item Name="distance2plane.vi" Type="VI" URL="../distance2plane.vi"/>
 		<Item Name="Error Clear.vi" Type="VI" URL="../Error Clear.vi"/>
 		<Item Name="ctlPkgATI.ctl" Type="VI" URL="../ctlPkgATI.ctl"/>
 		<Item Name="ctlPkgMain.ctl" Type="VI" URL="../ctlPkgMain.ctl"/>
@@ -30,14 +31,121 @@
 		<Item Name="ctlSeqFNs_SubVI ATI.ctl" Type="VI" URL="../ctlSeqFNs_SubVI ATI.ctl"/>
 		<Item Name="ctlSeqFNs_SubVI PhaseSpace.ctl" Type="VI" URL="../ctlSeqFNs_SubVI PhaseSpace.ctl"/>
 		<Item Name="ctlTrialState.ctl" Type="VI" URL="../ctlTrialState.ctl"/>
-		<Item Name="TriggerDPort" Type="NI-DAQmx Task">
+		<Item Name="ctldistance2plane.ctl" Type="VI" URL="../ctldistance2plane.ctl"/>
+		<Item Name="DAQmxTask_configData.txt" Type="Document" URL="../DAQmxTask_configData.txt"/>
+		<Item Name="TriggerPort" Type="NI-DAQmx Task">
 			<Property Name="\0\ChanType" Type="Str">Digital Output</Property>
 			<Property Name="\0\DO.InvertLines" Type="Str">0</Property>
-			<Property Name="\0\Name" Type="Str">TriggerDPort/DigitalOut</Property>
-			<Property Name="\0\PhysicalChanName" Type="Str">Dev6/port0</Property>
-			<Property Name="Channels" Type="Str">TriggerDPort/DigitalOut</Property>
-			<Property Name="Name" Type="Str">TriggerDPort</Property>
+			<Property Name="\0\Name" Type="Str">TriggerPort/DigitalOut</Property>
+			<Property Name="\0\PhysicalChanName" Type="Str">Trigger/port0</Property>
+			<Property Name="Channels" Type="Str">TriggerPort/DigitalOut</Property>
+			<Property Name="Name" Type="Str">TriggerPort</Property>
 			<Property Name="SampTimingType" Type="Str">On Demand</Property>
+		</Item>
+		<Item Name="TShape" Type="NI-DAQmx Task">
+			<Property Name="\0\AI.Max" Type="Str">10</Property>
+			<Property Name="\0\AI.MeasType" Type="Str">Voltage</Property>
+			<Property Name="\0\AI.Min" Type="Str">-10</Property>
+			<Property Name="\0\AI.TermCfg" Type="Str">Differential</Property>
+			<Property Name="\0\AI.Voltage.Units" Type="Str">Volts</Property>
+			<Property Name="\0\ChanType" Type="Str">Analog Input</Property>
+			<Property Name="\0\Name" Type="Str">TShape/Voltage_0</Property>
+			<Property Name="\0\PhysicalChanName" Type="Str">Dev6/ai52</Property>
+			<Property Name="\1\AI.Max" Type="Str">10</Property>
+			<Property Name="\1\AI.MeasType" Type="Str">Voltage</Property>
+			<Property Name="\1\AI.Min" Type="Str">-10</Property>
+			<Property Name="\1\AI.TermCfg" Type="Str">Differential</Property>
+			<Property Name="\1\AI.Voltage.Units" Type="Str">Volts</Property>
+			<Property Name="\1\ChanType" Type="Str">Analog Input</Property>
+			<Property Name="\1\Name" Type="Str">TShape/Voltage_1</Property>
+			<Property Name="\1\PhysicalChanName" Type="Str">Dev6/ai53</Property>
+			<Property Name="\10\AI.Max" Type="Str">10</Property>
+			<Property Name="\10\AI.MeasType" Type="Str">Voltage</Property>
+			<Property Name="\10\AI.Min" Type="Str">-10</Property>
+			<Property Name="\10\AI.TermCfg" Type="Str">Differential</Property>
+			<Property Name="\10\AI.Voltage.Units" Type="Str">Volts</Property>
+			<Property Name="\10\ChanType" Type="Str">Analog Input</Property>
+			<Property Name="\10\Name" Type="Str">TShape/Voltage_10</Property>
+			<Property Name="\10\PhysicalChanName" Type="Str">Dev6/ai70</Property>
+			<Property Name="\11\AI.Max" Type="Str">10</Property>
+			<Property Name="\11\AI.MeasType" Type="Str">Voltage</Property>
+			<Property Name="\11\AI.Min" Type="Str">-10</Property>
+			<Property Name="\11\AI.TermCfg" Type="Str">Differential</Property>
+			<Property Name="\11\AI.Voltage.Units" Type="Str">Volts</Property>
+			<Property Name="\11\ChanType" Type="Str">Analog Input</Property>
+			<Property Name="\11\Name" Type="Str">TShape/Voltage_11</Property>
+			<Property Name="\11\PhysicalChanName" Type="Str">Dev6/ai71</Property>
+			<Property Name="\2\AI.Max" Type="Str">10</Property>
+			<Property Name="\2\AI.MeasType" Type="Str">Voltage</Property>
+			<Property Name="\2\AI.Min" Type="Str">-10</Property>
+			<Property Name="\2\AI.TermCfg" Type="Str">Differential</Property>
+			<Property Name="\2\AI.Voltage.Units" Type="Str">Volts</Property>
+			<Property Name="\2\ChanType" Type="Str">Analog Input</Property>
+			<Property Name="\2\Name" Type="Str">TShape/Voltage_2</Property>
+			<Property Name="\2\PhysicalChanName" Type="Str">Dev6/ai54</Property>
+			<Property Name="\3\AI.Max" Type="Str">10</Property>
+			<Property Name="\3\AI.MeasType" Type="Str">Voltage</Property>
+			<Property Name="\3\AI.Min" Type="Str">-10</Property>
+			<Property Name="\3\AI.TermCfg" Type="Str">Differential</Property>
+			<Property Name="\3\AI.Voltage.Units" Type="Str">Volts</Property>
+			<Property Name="\3\ChanType" Type="Str">Analog Input</Property>
+			<Property Name="\3\Name" Type="Str">TShape/Voltage_3</Property>
+			<Property Name="\3\PhysicalChanName" Type="Str">Dev6/ai55</Property>
+			<Property Name="\4\AI.Max" Type="Str">10</Property>
+			<Property Name="\4\AI.MeasType" Type="Str">Voltage</Property>
+			<Property Name="\4\AI.Min" Type="Str">-10</Property>
+			<Property Name="\4\AI.TermCfg" Type="Str">Differential</Property>
+			<Property Name="\4\AI.Voltage.Units" Type="Str">Volts</Property>
+			<Property Name="\4\ChanType" Type="Str">Analog Input</Property>
+			<Property Name="\4\Name" Type="Str">TShape/Voltage_4</Property>
+			<Property Name="\4\PhysicalChanName" Type="Str">Dev6/ai64</Property>
+			<Property Name="\5\AI.Max" Type="Str">10</Property>
+			<Property Name="\5\AI.MeasType" Type="Str">Voltage</Property>
+			<Property Name="\5\AI.Min" Type="Str">-10</Property>
+			<Property Name="\5\AI.TermCfg" Type="Str">Differential</Property>
+			<Property Name="\5\AI.Voltage.Units" Type="Str">Volts</Property>
+			<Property Name="\5\ChanType" Type="Str">Analog Input</Property>
+			<Property Name="\5\Name" Type="Str">TShape/Voltage_5</Property>
+			<Property Name="\5\PhysicalChanName" Type="Str">Dev6/ai65</Property>
+			<Property Name="\6\AI.Max" Type="Str">10</Property>
+			<Property Name="\6\AI.MeasType" Type="Str">Voltage</Property>
+			<Property Name="\6\AI.Min" Type="Str">-10</Property>
+			<Property Name="\6\AI.TermCfg" Type="Str">Differential</Property>
+			<Property Name="\6\AI.Voltage.Units" Type="Str">Volts</Property>
+			<Property Name="\6\ChanType" Type="Str">Analog Input</Property>
+			<Property Name="\6\Name" Type="Str">TShape/Voltage_6</Property>
+			<Property Name="\6\PhysicalChanName" Type="Str">Dev6/ai66</Property>
+			<Property Name="\7\AI.Max" Type="Str">10</Property>
+			<Property Name="\7\AI.MeasType" Type="Str">Voltage</Property>
+			<Property Name="\7\AI.Min" Type="Str">-10</Property>
+			<Property Name="\7\AI.TermCfg" Type="Str">Differential</Property>
+			<Property Name="\7\AI.Voltage.Units" Type="Str">Volts</Property>
+			<Property Name="\7\ChanType" Type="Str">Analog Input</Property>
+			<Property Name="\7\Name" Type="Str">TShape/Voltage_7</Property>
+			<Property Name="\7\PhysicalChanName" Type="Str">Dev6/ai67</Property>
+			<Property Name="\8\AI.Max" Type="Str">10</Property>
+			<Property Name="\8\AI.MeasType" Type="Str">Voltage</Property>
+			<Property Name="\8\AI.Min" Type="Str">-10</Property>
+			<Property Name="\8\AI.TermCfg" Type="Str">Differential</Property>
+			<Property Name="\8\AI.Voltage.Units" Type="Str">Volts</Property>
+			<Property Name="\8\ChanType" Type="Str">Analog Input</Property>
+			<Property Name="\8\Name" Type="Str">TShape/Voltage_8</Property>
+			<Property Name="\8\PhysicalChanName" Type="Str">Dev6/ai68</Property>
+			<Property Name="\9\AI.Max" Type="Str">10</Property>
+			<Property Name="\9\AI.MeasType" Type="Str">Voltage</Property>
+			<Property Name="\9\AI.Min" Type="Str">-10</Property>
+			<Property Name="\9\AI.TermCfg" Type="Str">Differential</Property>
+			<Property Name="\9\AI.Voltage.Units" Type="Str">Volts</Property>
+			<Property Name="\9\ChanType" Type="Str">Analog Input</Property>
+			<Property Name="\9\Name" Type="Str">TShape/Voltage_9</Property>
+			<Property Name="\9\PhysicalChanName" Type="Str">Dev6/ai69</Property>
+			<Property Name="Channels" Type="Str">TShape/Voltage_0, TShape/Voltage_1, TShape/Voltage_2, TShape/Voltage_3, TShape/Voltage_4, TShape/Voltage_5, TShape/Voltage_6, TShape/Voltage_7, TShape/Voltage_8, TShape/Voltage_9, TShape/Voltage_10, TShape/Voltage_11</Property>
+			<Property Name="Name" Type="Str">TShape</Property>
+			<Property Name="SampClk.ActiveEdge" Type="Str">Rising</Property>
+			<Property Name="SampClk.Rate" Type="Str">1000</Property>
+			<Property Name="SampQuant.SampMode" Type="Str">Continuous Samples</Property>
+			<Property Name="SampQuant.SampPerChan" Type="Str">1000</Property>
+			<Property Name="SampTimingType" Type="Str">Sample Clock</Property>
 		</Item>
 		<Item Name="UShape1" Type="NI-DAQmx Task">
 			<Property Name="\0\AI.Max" Type="Str">10</Property>
@@ -267,8 +375,6 @@
 			<Property Name="SampQuant.SampPerChan" Type="Str">1000</Property>
 			<Property Name="SampTimingType" Type="Str">Sample Clock</Property>
 		</Item>
-		<Item Name="distance2plane.vi" Type="VI" URL="../distance2plane.vi"/>
-		<Item Name="ctlDistance2plane.ctl" Type="VI" URL="../ctlDistance2plane.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="AsciiToInt.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/AsciiToInt.vi"/>
