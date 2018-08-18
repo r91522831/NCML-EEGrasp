@@ -20,6 +20,7 @@
 		<Item Name="STTM Q MGR.vi" Type="VI" URL="../STTM Q MGR.vi"/>
 		<Item Name="FP Position and Size.vi" Type="VI" URL="../FP Position and Size.vi"/>
 		<Item Name="GLOBAL -MAIN.vi" Type="VI" URL="../GLOBAL -MAIN.vi"/>
+		<Item Name="distance2plane.vi" Type="VI" URL="../distance2plane.vi"/>
 		<Item Name="Error Clear.vi" Type="VI" URL="../Error Clear.vi"/>
 		<Item Name="ctlPkgATI.ctl" Type="VI" URL="../ctlPkgATI.ctl"/>
 		<Item Name="ctlPkgMain.ctl" Type="VI" URL="../ctlPkgMain.ctl"/>
@@ -30,14 +31,121 @@
 		<Item Name="ctlSeqFNs_SubVI ATI.ctl" Type="VI" URL="../ctlSeqFNs_SubVI ATI.ctl"/>
 		<Item Name="ctlSeqFNs_SubVI PhaseSpace.ctl" Type="VI" URL="../ctlSeqFNs_SubVI PhaseSpace.ctl"/>
 		<Item Name="ctlTrialState.ctl" Type="VI" URL="../ctlTrialState.ctl"/>
-		<Item Name="TriggerDPort" Type="NI-DAQmx Task">
+		<Item Name="ctldistance2plane.ctl" Type="VI" URL="../ctldistance2plane.ctl"/>
+		<Item Name="DAQmxTask_configData.txt" Type="Document" URL="../DAQmxTask_configData.txt"/>
+		<Item Name="TriggerPort" Type="NI-DAQmx Task">
 			<Property Name="\0\ChanType" Type="Str">Digital Output</Property>
 			<Property Name="\0\DO.InvertLines" Type="Str">0</Property>
-			<Property Name="\0\Name" Type="Str">TriggerDPort/DigitalOut</Property>
-			<Property Name="\0\PhysicalChanName" Type="Str">Dev6/port0</Property>
-			<Property Name="Channels" Type="Str">TriggerDPort/DigitalOut</Property>
-			<Property Name="Name" Type="Str">TriggerDPort</Property>
+			<Property Name="\0\Name" Type="Str">TriggerPort/DigitalOut</Property>
+			<Property Name="\0\PhysicalChanName" Type="Str">Trigger/port0</Property>
+			<Property Name="Channels" Type="Str">TriggerPort/DigitalOut</Property>
+			<Property Name="Name" Type="Str">TriggerPort</Property>
 			<Property Name="SampTimingType" Type="Str">On Demand</Property>
+		</Item>
+		<Item Name="TShape" Type="NI-DAQmx Task">
+			<Property Name="\0\AI.Max" Type="Str">10</Property>
+			<Property Name="\0\AI.MeasType" Type="Str">Voltage</Property>
+			<Property Name="\0\AI.Min" Type="Str">-10</Property>
+			<Property Name="\0\AI.TermCfg" Type="Str">Differential</Property>
+			<Property Name="\0\AI.Voltage.Units" Type="Str">Volts</Property>
+			<Property Name="\0\ChanType" Type="Str">Analog Input</Property>
+			<Property Name="\0\Name" Type="Str">TShape/Voltage_0</Property>
+			<Property Name="\0\PhysicalChanName" Type="Str">Dev6/ai52</Property>
+			<Property Name="\1\AI.Max" Type="Str">10</Property>
+			<Property Name="\1\AI.MeasType" Type="Str">Voltage</Property>
+			<Property Name="\1\AI.Min" Type="Str">-10</Property>
+			<Property Name="\1\AI.TermCfg" Type="Str">Differential</Property>
+			<Property Name="\1\AI.Voltage.Units" Type="Str">Volts</Property>
+			<Property Name="\1\ChanType" Type="Str">Analog Input</Property>
+			<Property Name="\1\Name" Type="Str">TShape/Voltage_1</Property>
+			<Property Name="\1\PhysicalChanName" Type="Str">Dev6/ai53</Property>
+			<Property Name="\10\AI.Max" Type="Str">10</Property>
+			<Property Name="\10\AI.MeasType" Type="Str">Voltage</Property>
+			<Property Name="\10\AI.Min" Type="Str">-10</Property>
+			<Property Name="\10\AI.TermCfg" Type="Str">Differential</Property>
+			<Property Name="\10\AI.Voltage.Units" Type="Str">Volts</Property>
+			<Property Name="\10\ChanType" Type="Str">Analog Input</Property>
+			<Property Name="\10\Name" Type="Str">TShape/Voltage_10</Property>
+			<Property Name="\10\PhysicalChanName" Type="Str">Dev6/ai70</Property>
+			<Property Name="\11\AI.Max" Type="Str">10</Property>
+			<Property Name="\11\AI.MeasType" Type="Str">Voltage</Property>
+			<Property Name="\11\AI.Min" Type="Str">-10</Property>
+			<Property Name="\11\AI.TermCfg" Type="Str">Differential</Property>
+			<Property Name="\11\AI.Voltage.Units" Type="Str">Volts</Property>
+			<Property Name="\11\ChanType" Type="Str">Analog Input</Property>
+			<Property Name="\11\Name" Type="Str">TShape/Voltage_11</Property>
+			<Property Name="\11\PhysicalChanName" Type="Str">Dev6/ai71</Property>
+			<Property Name="\2\AI.Max" Type="Str">10</Property>
+			<Property Name="\2\AI.MeasType" Type="Str">Voltage</Property>
+			<Property Name="\2\AI.Min" Type="Str">-10</Property>
+			<Property Name="\2\AI.TermCfg" Type="Str">Differential</Property>
+			<Property Name="\2\AI.Voltage.Units" Type="Str">Volts</Property>
+			<Property Name="\2\ChanType" Type="Str">Analog Input</Property>
+			<Property Name="\2\Name" Type="Str">TShape/Voltage_2</Property>
+			<Property Name="\2\PhysicalChanName" Type="Str">Dev6/ai54</Property>
+			<Property Name="\3\AI.Max" Type="Str">10</Property>
+			<Property Name="\3\AI.MeasType" Type="Str">Voltage</Property>
+			<Property Name="\3\AI.Min" Type="Str">-10</Property>
+			<Property Name="\3\AI.TermCfg" Type="Str">Differential</Property>
+			<Property Name="\3\AI.Voltage.Units" Type="Str">Volts</Property>
+			<Property Name="\3\ChanType" Type="Str">Analog Input</Property>
+			<Property Name="\3\Name" Type="Str">TShape/Voltage_3</Property>
+			<Property Name="\3\PhysicalChanName" Type="Str">Dev6/ai55</Property>
+			<Property Name="\4\AI.Max" Type="Str">10</Property>
+			<Property Name="\4\AI.MeasType" Type="Str">Voltage</Property>
+			<Property Name="\4\AI.Min" Type="Str">-10</Property>
+			<Property Name="\4\AI.TermCfg" Type="Str">Differential</Property>
+			<Property Name="\4\AI.Voltage.Units" Type="Str">Volts</Property>
+			<Property Name="\4\ChanType" Type="Str">Analog Input</Property>
+			<Property Name="\4\Name" Type="Str">TShape/Voltage_4</Property>
+			<Property Name="\4\PhysicalChanName" Type="Str">Dev6/ai64</Property>
+			<Property Name="\5\AI.Max" Type="Str">10</Property>
+			<Property Name="\5\AI.MeasType" Type="Str">Voltage</Property>
+			<Property Name="\5\AI.Min" Type="Str">-10</Property>
+			<Property Name="\5\AI.TermCfg" Type="Str">Differential</Property>
+			<Property Name="\5\AI.Voltage.Units" Type="Str">Volts</Property>
+			<Property Name="\5\ChanType" Type="Str">Analog Input</Property>
+			<Property Name="\5\Name" Type="Str">TShape/Voltage_5</Property>
+			<Property Name="\5\PhysicalChanName" Type="Str">Dev6/ai65</Property>
+			<Property Name="\6\AI.Max" Type="Str">10</Property>
+			<Property Name="\6\AI.MeasType" Type="Str">Voltage</Property>
+			<Property Name="\6\AI.Min" Type="Str">-10</Property>
+			<Property Name="\6\AI.TermCfg" Type="Str">Differential</Property>
+			<Property Name="\6\AI.Voltage.Units" Type="Str">Volts</Property>
+			<Property Name="\6\ChanType" Type="Str">Analog Input</Property>
+			<Property Name="\6\Name" Type="Str">TShape/Voltage_6</Property>
+			<Property Name="\6\PhysicalChanName" Type="Str">Dev6/ai66</Property>
+			<Property Name="\7\AI.Max" Type="Str">10</Property>
+			<Property Name="\7\AI.MeasType" Type="Str">Voltage</Property>
+			<Property Name="\7\AI.Min" Type="Str">-10</Property>
+			<Property Name="\7\AI.TermCfg" Type="Str">Differential</Property>
+			<Property Name="\7\AI.Voltage.Units" Type="Str">Volts</Property>
+			<Property Name="\7\ChanType" Type="Str">Analog Input</Property>
+			<Property Name="\7\Name" Type="Str">TShape/Voltage_7</Property>
+			<Property Name="\7\PhysicalChanName" Type="Str">Dev6/ai67</Property>
+			<Property Name="\8\AI.Max" Type="Str">10</Property>
+			<Property Name="\8\AI.MeasType" Type="Str">Voltage</Property>
+			<Property Name="\8\AI.Min" Type="Str">-10</Property>
+			<Property Name="\8\AI.TermCfg" Type="Str">Differential</Property>
+			<Property Name="\8\AI.Voltage.Units" Type="Str">Volts</Property>
+			<Property Name="\8\ChanType" Type="Str">Analog Input</Property>
+			<Property Name="\8\Name" Type="Str">TShape/Voltage_8</Property>
+			<Property Name="\8\PhysicalChanName" Type="Str">Dev6/ai68</Property>
+			<Property Name="\9\AI.Max" Type="Str">10</Property>
+			<Property Name="\9\AI.MeasType" Type="Str">Voltage</Property>
+			<Property Name="\9\AI.Min" Type="Str">-10</Property>
+			<Property Name="\9\AI.TermCfg" Type="Str">Differential</Property>
+			<Property Name="\9\AI.Voltage.Units" Type="Str">Volts</Property>
+			<Property Name="\9\ChanType" Type="Str">Analog Input</Property>
+			<Property Name="\9\Name" Type="Str">TShape/Voltage_9</Property>
+			<Property Name="\9\PhysicalChanName" Type="Str">Dev6/ai69</Property>
+			<Property Name="Channels" Type="Str">TShape/Voltage_0, TShape/Voltage_1, TShape/Voltage_2, TShape/Voltage_3, TShape/Voltage_4, TShape/Voltage_5, TShape/Voltage_6, TShape/Voltage_7, TShape/Voltage_8, TShape/Voltage_9, TShape/Voltage_10, TShape/Voltage_11</Property>
+			<Property Name="Name" Type="Str">TShape</Property>
+			<Property Name="SampClk.ActiveEdge" Type="Str">Rising</Property>
+			<Property Name="SampClk.Rate" Type="Str">1000</Property>
+			<Property Name="SampQuant.SampMode" Type="Str">Continuous Samples</Property>
+			<Property Name="SampQuant.SampPerChan" Type="Str">1000</Property>
+			<Property Name="SampTimingType" Type="Str">Sample Clock</Property>
 		</Item>
 		<Item Name="UShape1" Type="NI-DAQmx Task">
 			<Property Name="\0\AI.Max" Type="Str">10</Property>
@@ -270,7 +378,6 @@
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="AsciiToInt.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/AsciiToInt.vi"/>
-				<Item Name="Beep.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/Beep.vi"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
@@ -451,6 +558,54 @@
 				<Item Name="DAQmx Write (Analog 1D DBL NChan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Analog 1D DBL NChan 1Samp).vi"/>
 				<Item Name="DAQmx Write (Analog 1D DBL 1Chan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Analog 1D DBL 1Chan NSamp).vi"/>
 				<Item Name="DAQmx Write.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write.vi"/>
+				<Item Name="DWDT Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/DWDTOps.llb/DWDT Error Code.vi"/>
+				<Item Name="Normalize Waveform.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Normalize Waveform.vi"/>
+				<Item Name="Dynamic To Waveform Array.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/transition.llb/Dynamic To Waveform Array.vi"/>
+				<Item Name="_Get Sound Error From Return Value.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/_Get Sound Error From Return Value.vi"/>
+				<Item Name="Sound Output Task ID.ctl" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Output Task ID.ctl"/>
+				<Item Name="Sound Output Clear.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Output Clear.vi"/>
+				<Item Name="Sound Output Wait.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Output Wait.vi"/>
+				<Item Name="Sound Output Start.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Output Start.vi"/>
+				<Item Name="_ArrWfmsTo2DArr.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/_ArrWfmsTo2DArr.vi"/>
+				<Item Name="_ArrWfmsTo1DInterleave.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/_ArrWfmsTo1DInterleave.vi"/>
+				<Item Name="_ArrWfmsToData.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/_ArrWfmsToData.vi"/>
+				<Item Name="Sound Output Write (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Output Write (DBL).vi"/>
+				<Item Name="Sound Output Write (DBL Single).vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Output Write (DBL Single).vi"/>
+				<Item Name="Sound Output Write (U8).vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Output Write (U8).vi"/>
+				<Item Name="Sound Output Write (SGL).vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Output Write (SGL).vi"/>
+				<Item Name="Sound Output Write (I32).vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Output Write (I32).vi"/>
+				<Item Name="Sound Output Write (I16).vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Output Write (I16).vi"/>
+				<Item Name="Sound Output Write.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Output Write.vi"/>
+				<Item Name="Sound Data Format.ctl" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Data Format.ctl"/>
+				<Item Name="Sampling Mode.ctl" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sampling Mode.ctl"/>
+				<Item Name="Sound Output Configure.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Output Configure.vi"/>
+				<Item Name="_FormatFromData (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/_FormatFromData (DBL).vi"/>
+				<Item Name="_FormatFromData (U8).vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/_FormatFromData (U8).vi"/>
+				<Item Name="_FormatFromData (SGL).vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/_FormatFromData (SGL).vi"/>
+				<Item Name="_FormatFromData (I32).vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/_FormatFromData (I32).vi"/>
+				<Item Name="_FormatFromData (I16).vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/_FormatFromData (I16).vi"/>
+				<Item Name="_FormatFromData.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/_FormatFromData.vi"/>
+				<Item Name="Sound Output Write Simple (DBL2).vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Output Write Simple (DBL2).vi"/>
+				<Item Name="Sound Output Write Simple (DBL1).vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Output Write Simple (DBL1).vi"/>
+				<Item Name="Sound Output Write Simple.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Output Write Simple.vi"/>
+				<Item Name="subPlayWaveform.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/PlayWaveformSource.llb/subPlayWaveform.vi"/>
+				<Item Name="Sound File Refnum.ctl" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound File Refnum.ctl"/>
+				<Item Name="Sound File Close.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound File Close.vi"/>
+				<Item Name="_2DArrToArrWfms.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/_2DArrToArrWfms.vi"/>
+				<Item Name="Sound File Info (refnum).vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound File Info (refnum).vi"/>
+				<Item Name="Sound File Position.ctl" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound File Position.ctl"/>
+				<Item Name="Sound File Read (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound File Read (DBL).vi"/>
+				<Item Name="Path To Command Line String.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/Path To Command Line String.vi"/>
+				<Item Name="Sound File Read Open.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound File Read Open.vi"/>
+				<Item Name="Sound File Read Simple.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound File Read Simple.vi"/>
+				<Item Name="PathToUNIXPathString.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/CFURL.llb/PathToUNIXPathString.vi"/>
+				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
+				<Item Name="NI_AALPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALPro.lvlib"/>
+				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
+				<Item Name="Write To Spreadsheet File (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write To Spreadsheet File (string).vi"/>
+				<Item Name="Write To Spreadsheet File (I64).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write To Spreadsheet File (I64).vi"/>
+				<Item Name="Write To Spreadsheet File (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write To Spreadsheet File (DBL).vi"/>
+				<Item Name="Write To Spreadsheet File.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write To Spreadsheet File.vi"/>
 			</Item>
 			<Item Name="ctlPkgPhaseSpace.ctl" Type="VI" URL="../ctlPkgPhaseSpace.ctl"/>
 			<Item Name="ctrCommonFlags.ctl" Type="VI" URL="../../NCML-PhaseSpace/ctrCommonFlags.ctl"/>
@@ -467,6 +622,8 @@
 			</Item>
 			<Item Name="Get Terminal Name with Device Prefix.vi" Type="VI" URL="/C/Program Files/National Instruments/LabVIEW 2011/examples/DAQmx/_Utility/_Utility.llb/Get Terminal Name with Device Prefix.vi"/>
 			<Item Name="CalibMatrix (SubVI).vi" Type="VI" URL="../../NCML-ATI/CalibMatrix (SubVI).vi"/>
+			<Item Name="lvsound2.dll" Type="Document" URL="/C/Program Files/National Instruments/LabVIEW 2011/resource/lvsound2.dll"/>
+			<Item Name="daqmx.rc" Type="Document" URL="/C/Program Files/National Instruments/LabVIEW 2011/resource/objmgr/daqmx.rc"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="EEGrasp" Type="Source Distribution">
