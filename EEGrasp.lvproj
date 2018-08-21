@@ -375,6 +375,11 @@
 			<Property Name="SampQuant.SampPerChan" Type="Str">1000</Property>
 			<Property Name="SampTimingType" Type="Str">Sample Clock</Property>
 		</Item>
+		<Item Name="ctlRecording.ctl" Type="VI" URL="../ctlRecording.ctl"/>
+		<Item Name="updateTrialInfo (SubVI).vi" Type="VI" URL="../updateTrialInfo (SubVI).vi"/>
+		<Item Name="createLogFile (SubVI).vi" Type="VI" URL="../createLogFile (SubVI).vi"/>
+		<Item Name="makeTrialList (SubVI).vi" Type="VI" URL="../makeTrialList (SubVI).vi"/>
+		<Item Name="noRepaetFileName(SubVI).vi" Type="VI" URL="../noRepaetFileName(SubVI).vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="AsciiToInt.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/tdmsutil.llb/AsciiToInt.vi"/>
@@ -601,14 +606,11 @@
 				<Item Name="PathToUNIXPathString.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/CFURL.llb/PathToUNIXPathString.vi"/>
 				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
 				<Item Name="NI_AALPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALPro.lvlib"/>
-<<<<<<< HEAD
 				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
 				<Item Name="Write To Spreadsheet File (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write To Spreadsheet File (string).vi"/>
 				<Item Name="Write To Spreadsheet File (I64).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write To Spreadsheet File (I64).vi"/>
 				<Item Name="Write To Spreadsheet File (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write To Spreadsheet File (DBL).vi"/>
 				<Item Name="Write To Spreadsheet File.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write To Spreadsheet File.vi"/>
-=======
->>>>>>> 315f6d2b4148ebbae18814ce863ae16985b39a58
 			</Item>
 			<Item Name="ctlPkgPhaseSpace.ctl" Type="VI" URL="../ctlPkgPhaseSpace.ctl"/>
 			<Item Name="ctrCommonFlags.ctl" Type="VI" URL="../../NCML-PhaseSpace/ctrCommonFlags.ctl"/>
