@@ -13,7 +13,10 @@
 		<Item Name="cleanATIData (SubVI).vi" Type="VI" URL="../cleanATIData (SubVI).vi"/>
 		<Item Name="cleanPhaseSpaceData (SubVI).vi" Type="VI" URL="../cleanPhaseSpaceData (SubVI).vi"/>
 		<Item Name="CreateSensorChannelNames (SubVI).vi" Type="VI" URL="../CreateSensorChannelNames (SubVI).vi"/>
+		<Item Name="fillInGap.vi" Type="VI" URL="../fillInGap.vi"/>
+		<Item Name="findIndices4MissingData (SubVI).vi" Type="VI" URL="../findIndices4MissingData (SubVI).vi"/>
 		<Item Name="FindRepeated (SubVI).vi" Type="VI" URL="../FindRepeated (SubVI).vi"/>
+		<Item Name="findZerosAndInterpolate.vi" Type="VI" URL="../findZerosAndInterpolate.vi"/>
 		<Item Name="GetTrigger (SubVI).vi" Type="VI" URL="../GetTrigger (SubVI).vi"/>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
 		<Item Name="resampleAndCombine(SubVI).vi" Type="VI" URL="../resampleAndCombine(SubVI).vi"/>
@@ -31,8 +34,10 @@
 				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
 				<Item Name="NI_AALPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALPro.lvlib"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
+				<Item Name="NI_Gmath.lvlib" Type="Library" URL="/&lt;vilib&gt;/gmath/NI_Gmath.lvlib"/>
 				<Item Name="NI_MABase.lvlib" Type="Library" URL="/&lt;vilib&gt;/measure/NI_MABase.lvlib"/>
 				<Item Name="NI_MAPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/measure/NI_MAPro.lvlib"/>
+				<Item Name="NI_Matrix.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/Matrix/NI_Matrix.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
 				<Item Name="Number of Waveform Samples.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Number of Waveform Samples.vi"/>
 				<Item Name="Timestamp Subtract.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/TSOps.llb/Timestamp Subtract.vi"/>
