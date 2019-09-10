@@ -628,6 +628,7 @@
 			<Item Name="Get Terminal Name with Device Prefix.vi" Type="VI" URL="/C/Program Files/National Instruments/LabVIEW 2011/examples/DAQmx/_Utility/_Utility.llb/Get Terminal Name with Device Prefix.vi"/>
 			<Item Name="CalibMatrix (SubVI).vi" Type="VI" URL="../../NCML-ATI/CalibMatrix (SubVI).vi"/>
 			<Item Name="lvsound2.dll" Type="Document" URL="/C/Program Files/National Instruments/LabVIEW 2011/resource/lvsound2.dll"/>
+			<Item Name="daqmx.rc" Type="Document" URL="/C/Program Files/National Instruments/LabVIEW 2011/resource/objmgr/daqmx.rc"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="EEGrasp" Type="Source Distribution">
