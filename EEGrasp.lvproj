@@ -613,21 +613,21 @@
 				<Item Name="Write To Spreadsheet File.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write To Spreadsheet File.vi"/>
 			</Item>
 			<Item Name="ctlPkgPhaseSpace.ctl" Type="VI" URL="../ctlPkgPhaseSpace.ctl"/>
-			<Item Name="ctrCommonFlags.ctl" Type="VI" URL="../../NCML-PhaseSpace/ctrCommonFlags.ctl"/>
-			<Item Name="ctrInitFlags.ctl" Type="VI" URL="../../NCML-PhaseSpace/ctrInitFlags.ctl"/>
-			<Item Name="ctrMarkersFlags.ctl" Type="VI" URL="../../NCML-PhaseSpace/ctrMarkersFlags.ctl"/>
-			<Item Name="ctrOWLMarker.ctl" Type="VI" URL="../../NCML-PhaseSpace/ctrOWLMarker.ctl"/>
-			<Item Name="ctrSetsFlags.ctl" Type="VI" URL="../../NCML-PhaseSpace/ctrSetsFlags.ctl"/>
-			<Item Name="ctrTrackersFlags.ctl" Type="VI" URL="../../NCML-PhaseSpace/ctrTrackersFlags.ctl"/>
-			<Item Name="libowlsock.dll" Type="Document" URL="/C/Program Files/Phasespace/libowlsock.dll"/>
+			<Item Name="ctrCommonFlags.ctl" Type="VI" URL="../ctrCommonFlags.ctl"/>
+			<Item Name="ctrOWLMarker.ctl" Type="VI" URL="../ctrOWLMarker.ctl"/>
+			<Item Name="ctrSetsFlags.ctl" Type="VI" URL="../ctrSetsFlags.ctl"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/C/Program Files/National Instruments/LabVIEW 2011/resource/lvanlys.dll"/>
-			<Item Name="TrackingComm.vi" Type="VI" URL="../../NCML-PhaseSpace/TrackingComm.vi"/>
+			<Item Name="TrackingComm.vi" Type="VI" URL="../TrackingComm.vi"/>
 			<Item Name="nilvaiu.dll" Type="Document" URL="nilvaiu.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Get Terminal Name with Device Prefix.vi" Type="VI" URL="/C/Program Files/National Instruments/LabVIEW 2011/examples/DAQmx/_Utility/_Utility.llb/Get Terminal Name with Device Prefix.vi"/>
-			<Item Name="CalibMatrix (SubVI).vi" Type="VI" URL="../../NCML-ATI/CalibMatrix (SubVI).vi"/>
+			<Item Name="CalibMatrix (SubVI).vi" Type="VI" URL="../CalibMatrix (SubVI).vi"/>
+			<Item Name="libowlsock.dll" Type="Document" URL="/C/Program Files/Phasespace/libowlsock.dll"/>
 			<Item Name="lvsound2.dll" Type="Document" URL="/C/Program Files/National Instruments/LabVIEW 2011/resource/lvsound2.dll"/>
+			<Item Name="ctrInitFlags.ctl" Type="VI" URL="../ctrInitFlags.ctl"/>
+			<Item Name="ctrTrackersFlags.ctl" Type="VI" URL="../ctrTrackersFlags.ctl"/>
+			<Item Name="ctrMarkersFlags.ctl" Type="VI" URL="../ctrMarkersFlags.ctl"/>
+			<Item Name="Get Terminal Name with Device Prefix.vi" Type="VI" URL="/C/Program Files/National Instruments/LabVIEW 2011/examples/DAQmx/_Utility/_Utility.llb/Get Terminal Name with Device Prefix.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="EEGrasp" Type="Source Distribution">
